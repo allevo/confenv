@@ -1,7 +1,6 @@
 'use strict';
 
 function getConfigurationFrom(obj) {
-
   function isIntegerPolyfill(n) {
     if (!Number.isFinite(n)) return false;
     if (n % 1 === 0) return true;
