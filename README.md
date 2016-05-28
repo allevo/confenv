@@ -1,4 +1,7 @@
 # confenv
+[![Build Status](https://travis-ci.org/allevo/confenv.svg?branch=master)](https://travis-ci.org/allevo/confenv)
+[![Coverage Status](https://coveralls.io/repos/github/allevo/confenv/badge.svg?branch=master)](https://coveralls.io/github/allevo/confenv?branch=master)
+
 Load configuration from environment variables.
 
 Simple, easy, no deps.
@@ -10,13 +13,13 @@ But the environment variables aren't typed. And this means you must cast all val
 Using this module, your code is clean from any type casting.
 
 ## getConfigurationFrom
-Take an object as parameter and return a `Conf` instance
+This function takes an object as parameter and return a `Configuration` instance
 
 ## getConfigurationFromEnvironment
-call getConfigurationFrom with `process.env` as parameter
+This function calls getConfigurationFrom with `process.env` as parameter
 
-## Conf class
-There're two method types of Conf class: `getAs<Type>OrUndefined` and `getAs<Type>OrThrow`.
+## Configuration class
+There're two method types of Configuration class: `getAs<Type>OrUndefined` and `getAs<Type>OrThrow`.
 
 `<Type>` could be one of them:
  - String
