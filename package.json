@@ -1,0 +1,38 @@
+{
+  "name": "confenv",
+  "version": "1.0.0",
+  "description": "Load configuration from environment variables",
+  "main": "index.js",
+  "scripts": {
+    "mocha": "mocha test",
+    "lint": "eslint .",
+    "coverage": "istanbul cover _mocha -- -R spec",
+    "coveralls": "istanbul cover _mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | coveralls && rm -rf ./coverage",
+    "travis": "npm run lint && npm run mocha && npm run coveralls",
+    "test": "npm run lint && npm run mocha && npm run coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/allevo/confenv.git"
+  },
+  "keywords": [
+    "config",
+    "conf",
+    "configuration",
+    "environment",
+    "process.env"
+  ],
+  "author": "allevo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/allevo/confenv/issues"
+  },
+  "homepage": "https://github.com/allevo/confenv",
+  "devDependencies": {
+    "coveralls": "^2.11.9",
+    "eslint": "^2.11.0",
+    "istanbul": "^0.4.3",
+    "mocha": "^2.5.3",
+    "mocha-lcov-reporter": "^1.2.0"
+  }
+}
